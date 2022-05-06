@@ -30,4 +30,8 @@ git push - Uploads all local branch commits to GitHub
 
 git pull - Updates your current local working branch with all new commits from the corresponding remote branch on GitHub
 
+git show - Outputs metadata and content changes of the specified commit
+
+git diff - Shows content differences between two branches
+
 rm -rf .git - delete local repo
