@@ -1,0 +1,211 @@
+<!-- HTML:
+  - stands for HyperText Markup Language
+  - is the standard markup language for creating Web pages
+  - describes the structure of a Web page
+  - consists/include of a series of elements 
+  - elements tell the browser how to display the content
+  - elements label pieces of content
+  - elements can be nested
+  - documents consist of nested HTML elements
+  - elements can have attributes (Attributes provide additional information about elements)
+-->
+<!DOCTYPE html>
+<!-- declaration defines that this document is an HTML5 document -->
+<html lang="en">
+  <!-- the root element of an HTML page -->
+
+  <head>
+    <!-- contains meta information about the HTML page -->
+
+    <meta charset="UTF-8" />
+    <!-- defines metadata about an HTML document -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="" />
+    <!-- External Style -->
+
+    <title>HTML Review</title>
+    <!-- specifies a title for the HTML page -->
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid #333;
+      }
+
+      .grid-container {
+        display: grid;
+        width: 400px;
+        gap: 20px;
+        grid-template-columns: 100px 100px 100px;
+        border: 2px solid #333;
+      }
+
+      .grid-item{
+        border: 1px solid #333;
+      }
+
+      .container-form form {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        flex
+      }
+    </style>
+    <!-- Internal Style -->
+  </head>
+  <body>
+    <!-- defines the document's body, and is a container for all the visible contents -->
+
+    <h1>morbi tincidunt ornare massa eget</h1>
+    <!-- 
+        - titles or subtitles display on a webpage, defined with the <h1>(most important) to <h6>(least important) 
+        - search engines use the headings to index the structure and content of your web pages.
+    -->
+
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+      labore et dolore magna aliqua. Diam vulputate ut pharetra sit amet aliquam. Magna eget est
+      lorem ipsum dolor sit.
+    </p>
+    <!--
+        - defines a paragraph
+        - starts on a new line
+        - browsers automatically add some white space (a margin) before and after a paragraph
+    -->
+
+    <hr />
+    <!-- defines a thematic break in an HTML page, displayed as a horizontal rule -->
+
+    <p>Lorem ipsum dolor sit amet<br />consectetur adipiscing elit</p>
+    <!-- defines a line break -->
+
+    <a href="#">Link</a>
+    <!-- defines a hyperlink -->
+
+    <img src="url" alt="alternatetext" width="50" height="50" />
+    <!-- used to embed an image in a web page -->
+
+    <table>
+      <!-- arrange data into rows and columns -->
+      <tr>
+        <!-- table row -->
+        <th colspan="3" rowspan="2">Name</th>
+        <!-- table header -->
+        <th>Age</th>
+        <th>Phone</th>
+      </tr>
+      <tr>
+        <td>Mr B</td>
+        <!-- table data -->
+        <td>22</td>
+        <td>0xx 3xx 6xx</td>
+      </tr>
+      <tr>
+        <td>Mr D</td>
+        <td>32</td>
+        <td>0xx 3xx 6xx</td>
+      </tr>
+    </table>
+
+    <ul>
+      <!-- The list items will be marked with bullets (small black circles) by default -->
+      <!-- style="list-style-type: ;" - The list items will not be marked -->
+      <li>a</li>
+      <li>b</li>
+      <li>c</li>
+    </ul>
+
+    <ol>
+      <!-- The list items will be marked with numbers by default -->
+      <!-- type="" - defines the type of the list item marker -->
+      <li>a</li>
+      <li>b</li>
+      <li>c</li>
+    </ol>
+
+    <div>
+      <!-- a block-level and is often used as a container for other HTML elements -->
+      Lorem ipsum dolor sit amet
+    </div>
+
+    <span>
+      <!-- an inline container used to mark up a part of a text, or a part of a document -->
+      Lorem ipsum dolor sit amet
+    </span>
+    <br />
+
+    <iframe
+      src="https://htmldog.com/guides/html/beginner/gettingstarted/"
+      width="500"
+      height="300"
+      frameborder="0"
+    ></iframe>
+    <!-- An inline frame is used to embed another document within the current HTML document -->
+
+    <div class="grid-container">
+      <div class="grid-item">1</div>
+      <div class="grid-item">2</div>
+      <div class="grid-item">3</div>
+      <div class="grid-item">4</div>
+      <div class="grid-item">5</div>
+      <div class="grid-item">6</div>
+      <div class="grid-item">7</div>
+      <div class="grid-item">8</div>
+      <div class="grid-item">9</div>
+    </div>
+
+    <div class="container-form">
+      <form action="">
+        <!-- a container for different types of input elements -->
+
+        <label for="name">Name:</label>
+        <!-- useful for screen-reader users -->
+        <input type="text" name="name" id="name" />
+        <!-- defines a single-line input field for text input -->
+
+        <label for="checkbox">Like:</label>
+        <input type="checkbox" name="" id="" />
+        <input type="checkbox" name="" id="checkbox" />
+        <!-- select ZERO or MORE options of a limited number of choices -->
+
+        <label for="radio">Gender:</label>
+        <input type="radio" name="" id="" checked />
+        <input type="radio" name="" id="radio" />
+        <!-- select ONE of a limited number of choices -->
+
+        <label for="cars">Choose a car:</label>
+        <select id="cars" name="cars">
+          <!-- defines a drop-down list -->
+          <option value="volvo" selected>Volvo</option>
+          <!-- defines an option that can be selected -->
+          <option value="saab">Saab</option>
+          <option value="fiat">Fiat</option>
+          <option value="audi">Audi</option>
+        </select>
+
+        <label for="area">Type smt:</label>
+        <textarea name="area" id="area" cols="30" rows="10"></textarea>
+
+        <input type="button" value="Submit" />
+        <!-- defines a button for submitting the form data to a form-handler -->
+
+        <button>Btn</button>
+      </form>
+    </div>
+
+    <div id="root"></div>
+
+    <script src="index.js">
+      // - define a client-side script (JavaScript)
+    </script>
+  </body>
+</html>
