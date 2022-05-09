@@ -2,6 +2,8 @@ git init - Turn an existing directory into a git repository
 
 git remote add origin [url] - Set a new remote
 
+git remote rename [old] [new] - rename git remote
+
 git add . - add all file change
 
 git add -u - add file except untracked file
