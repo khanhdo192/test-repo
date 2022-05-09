@@ -4,6 +4,8 @@ git remote add origin [url] - Set a new remote
 
 git remote rename [old] [new] - rename git remote
 
+git remote set-url [remote-name] [url] - Changes URLs for the remote
+
 git add . - add all file change
 
 git add -u - add file except untracked file
@@ -25,6 +27,8 @@ git branch -d [branch-name] - Delete branch locally
 git branch -m [new-branch-name] - Rename the current branch
 
 git fetch - Downloads all history from the remote tracking branches
+
+git fetch --all - fetching all remote
 
 git merge [branch] - Combines the specified branch’s history into the current branch
 
