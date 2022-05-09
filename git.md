@@ -46,6 +46,8 @@ git stash drop "stash@{index}" - delete stash u want
 
 git stash clear - delete all stash
 
+git rebase [branch-name] - apply all commit to branch
+
 git show - Outputs metadata and content changes of the specified commit
 
 git diff - Shows content differences between two branches
