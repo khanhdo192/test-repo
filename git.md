@@ -48,9 +48,13 @@ git stash clear - delete all stash
 
 git rebase [branch-name] - apply all commit to branch
 
-git show - Outputs metadata and content changes of the specified commit
+git rebase -i - open interactive rebase
 
-git diff - Shows content differences between two branches
+git show - output metadata and content changes of the specified commit
+
+git diff - show content differences between two branches
+
+git log - show history activity
 
 rm -rf .git - delete local repo
 
