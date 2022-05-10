@@ -62,6 +62,16 @@ git diff - show content differences between two branches
 
 git log - show history activity
 
+git log --oneline - show commit history
+
+git reset --hard [commit-id] - undoing local private changes
+
+git commit --amend - undo the last commit
+
+git revert [commit-id] - undoing shared public changes
+
+git checkout [commit-id] - review the commit history
+
 rm -rf .git - delete local repo
 
 .gitignore - exclude files from being tracked with Git
