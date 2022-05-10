@@ -32,7 +32,7 @@ ctrl + l - blacked out line
 
 ctrl + alt + up/down arrow - insert cursor up/down
 
-ctrl + mouse click - insert cursor
+alt + mouse click - insert cursor
 
 ctrl + d - insert cursor to same word found
 
