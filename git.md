@@ -6,7 +6,7 @@ git remote rename [old] [new] - rename git remote
 
 git remote set-url [remote-name] [url] - Changes URLs for the remote
 
-git add . - add all file changeee
+git add . - add all file change
 
 git add -u - add file except untracked file
 
