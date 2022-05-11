@@ -46,6 +46,10 @@
         text-align: center;
       }
 
+      .container {
+        margin: 10px auto;
+      }
+
       table {
         margin: 0 auto;
       }
@@ -95,15 +99,15 @@
     <!-- defines the document's body, and is a container for all the visible contents -->
 
     <div>
-      <div>
-        <h1>Use DevTools to see detail</h1>
+      <div class="container">
+        <h1 title="Please use DevTools">Hi im heading 1</h1>
         <!-- 
           - titles or subtitles display on a webpage, defined with the <h1>(most important) to <h6>(least important) 
           - search engines use the headings to index the structure and content of your web pages.
         -->
       </div>
-      <div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+      <div class="container">
+        <p>Hi im paragraph</p>
         <!--
           - defines a paragraph
           - starts on a new line
@@ -113,18 +117,18 @@
 
       <hr />
       <!-- defines a thematic break in an HTML page, displayed as a horizontal rule -->
-      <div>
-        <p>Lorem ipsum dolor sit amet<br />consectetur adipiscing elit</p>
+      <div class="container">
+        <p>There is something here<br />line breaked here</p>
         <!-- defines a line break -->
 
         <a href="#">Link</a>
         <!-- defines a hyperlink -->
 
-        <img src="url" alt="alternatetext" width="50" height="50" />
+        <img src="url" alt="This is an image" width="50" height="50" />
         <!-- used to embed an image in a web page -->
       </div>
-      <div>
-        <h4>Table user</h4>
+      <div class="container">
+        <h4>Table</h4>
         <table>
           <tr>
             <th colspan="3" rowspan="2">Name</th>
@@ -148,29 +152,30 @@
         <!-- arrange data into rows and columns -->
       </div>
 
-      <div>
-        <h4>List</h4>
-        <ul>
-          <li>b</li>
-          <li>a</li>
-          <li>c</li>
-        </ul>
-        <!-- The list items will be marked with bullets (small black circles) by default -->
-        <!-- style="list-style-type: ;" - The list items will not be marked -->
+      <div class="container" style="display: flex; justify-content: space-evenly">
+        <div>
+          <h4>List with bullets</h4>
+          <ul>
+            <li>b</li>
+            <li>a</li>
+            <li>c</li>
+          </ul>
+          <!-- The list items will be marked with bullets (small black circles) by default -->
+          <!-- style="list-style-type: ;" - The list items will not be marked -->
+        </div>
+        <div>
+          <h4>List by order</h4>
+          <ol>
+            <li>a</li>
+            <li>b</li>
+            <li>c</li>
+          </ol>
+          <!-- The list items will be marked with numbers by default -->
+          <!-- type="" - defines the type of the list item marker -->
+        </div>
       </div>
 
-      <div>
-        <h4>List by order</h4>
-        <ol>
-          <li>a</li>
-          <li>b</li>
-          <li>c</li>
-        </ol>
-        <!-- The list items will be marked with numbers by default -->
-        <!-- type="" - defines the type of the list item marker -->
-      </div>
-
-      <div>
+      <div class="container">
         <h4>Div vs Span</h4>
         This is a div
       </div>
@@ -198,7 +203,7 @@
 
       <h4>Form example</h4>
       <div class="container-form">
-        <form action="">
+        <form action="" autocomplete="off" method="" target="_blank">
           <!-- a container for different types of input elements -->
 
           <div class="form-box">
@@ -208,7 +213,7 @@
                 <div class="form-group">
                   <label for="name">Name:</label>
                   <!-- useful for screen-reader users -->
-                  <input type="text" name="name" id="name" />
+                  <input type="text" name="name" id="name" accesskey="n" tabindex="-1" autofocus />
                   <!-- defines a single-line input field for text input -->
                 </div>
                 <div class="form-group">
@@ -251,6 +256,21 @@
         </form>
       </div>
 
+      <div class="container">
+        <h4>Video</h4>
+        <video
+          src="assets/video/2022-04-29 09-14-27.mp4"
+          controls
+          width="450"
+          height="300"
+          autoplay
+          muted
+          loop
+        ></video>
+        <h4>Twich</h4>
+        <div id="twitch-embed"></div>
+      </div>
+
       <h4>Semantic html</h4>
       <header>
         <nav></nav>
@@ -260,6 +280,7 @@
       <aside></aside>
       <!-- defines some content aside from the content it is placed in (like a sidebar) -->
       <section>
+        <img src="https://www.w3schools.com/html/img_sem_elements.gif" alt="" />
         <main></main>
         <!-- specifies the main content of a document -->
         <article></article>
@@ -281,6 +302,16 @@
 
     <script src="">
       // - define a client-side script (JavaScript)
+    </script>
+
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+    <script type="text/javascript">
+      new Twitch.Embed('twitch-embed', {
+        width: 854,
+        height: 480,
+        channel: 'riotgames',
+        muted: true,
+      });
     </script>
   </body>
 </html>
