@@ -28,11 +28,26 @@
     <title>HTML Review</title>
     <!-- specifies a title for the HTML page -->
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <style>
       * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+      }
+
+      body {
+        text-align: center;
+      }
+
+      table {
+        margin: 0 auto;
       }
 
       table,
@@ -41,22 +56,37 @@
         border: 1px solid #333;
       }
 
+      ul,
+      ol {
+        display: table;
+        margin: 0 auto;
+      }
+
       .grid-container {
         display: grid;
-        width: 400px;
+        justify-content: center;
         gap: 20px;
-        grid-template-columns: 100px 100px 100px;
-        border: 2px solid #333;
+        grid-template-columns: 100px 100px 100px 100px;
       }
 
       .grid-item {
         border: 1px solid #333;
       }
 
-      .container-form form {
+      .form-box {
+        width: 400px;
+        margin: auto;
+      }
+
+      .input-box {
         display: flex;
         flex-direction: column;
-        width: 400px;
+        padding: 10px;
+        vertical-align: center;
+      }
+
+      .form-group {
+        margin-bottom: 1rem;
       }
     </style>
     <!-- Internal Style -->
@@ -64,164 +94,192 @@
   <body>
     <!-- defines the document's body, and is a container for all the visible contents -->
 
-    <h1>morbi tincidunt ornare massa eget</h1>
-    <!-- 
-        - titles or subtitles display on a webpage, defined with the <h1>(most important) to <h6>(least important) 
-        - search engines use the headings to index the structure and content of your web pages.
-    -->
-
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-      labore et dolore magna aliqua. Diam vulputate ut pharetra sit amet aliquam. Magna eget est
-      lorem ipsum dolor sit.
-    </p>
-    <!--
-        - defines a paragraph
-        - starts on a new line
-        - browsers automatically add some white space (a margin) before and after a paragraph
-    -->
-
-    <hr />
-    <!-- defines a thematic break in an HTML page, displayed as a horizontal rule -->
-
-    <p>Lorem ipsum dolor sit amet<br />consectetur adipiscing elit</p>
-    <!-- defines a line break -->
-
-    <a href="#">Link</a>
-    <!-- defines a hyperlink -->
-
-    <img src="url" alt="alternatetext" width="50" height="50" />
-    <!-- used to embed an image in a web page -->
-
-    <table>
-      <!-- arrange data into rows and columns -->
-      <tr>
-        <!-- table row -->
-        <th colspan="3" rowspan="2">Name</th>
-        <!-- table header -->
-        <th>Age</th>
-        <th>Phone</th>
-      </tr>
-      <tr>
-        <td>Mr B</td>
-        <!-- table data -->
-        <td>22</td>
-        <td>0xx 3xx 6xx</td>
-      </tr>
-      <tr>
-        <td>Mr D</td>
-        <td>32</td>
-        <td>0xx 3xx 6xx</td>
-      </tr>
-    </table>
-
-    <ul>
-      <!-- The list items will be marked with bullets (small black circles) by default -->
-      <!-- style="list-style-type: ;" - The list items will not be marked -->
-      <li>a</li>
-      <li>b</li>
-      <li>c</li>
-    </ul>
-
-    <ol>
-      <!-- The list items will be marked with numbers by default -->
-      <!-- type="" - defines the type of the list item marker -->
-      <li>a</li>
-      <li>b</li>
-      <li>c</li>
-    </ol>
-
     <div>
+      <div>
+        <h1>Use DevTools to see detail</h1>
+        <!-- 
+          - titles or subtitles display on a webpage, defined with the <h1>(most important) to <h6>(least important) 
+          - search engines use the headings to index the structure and content of your web pages.
+        -->
+      </div>
+      <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        <!--
+          - defines a paragraph
+          - starts on a new line
+          - browsers automatically add some white space (a margin) before and after a paragraph
+        -->
+      </div>
+
+      <hr />
+      <!-- defines a thematic break in an HTML page, displayed as a horizontal rule -->
+      <div>
+        <p>Lorem ipsum dolor sit amet<br />consectetur adipiscing elit</p>
+        <!-- defines a line break -->
+
+        <a href="#">Link</a>
+        <!-- defines a hyperlink -->
+
+        <img src="url" alt="alternatetext" width="50" height="50" />
+        <!-- used to embed an image in a web page -->
+      </div>
+      <div>
+        <h4>Table user</h4>
+        <table>
+          <tr>
+            <th colspan="3" rowspan="2">Name</th>
+            <!-- table header -->
+            <th>Age</th>
+            <th>Phone</th>
+          </tr>
+          <!-- table row -->
+          <tr>
+            <td>Mr B</td>
+            <!-- table data -->
+            <td>22</td>
+            <td>0xx 3xx 6xx</td>
+          </tr>
+          <tr>
+            <td>Mr D</td>
+            <td>32</td>
+            <td>0xx 3xx 6xx</td>
+          </tr>
+        </table>
+        <!-- arrange data into rows and columns -->
+      </div>
+
+      <div>
+        <h4>List</h4>
+        <ul>
+          <li>b</li>
+          <li>a</li>
+          <li>c</li>
+        </ul>
+        <!-- The list items will be marked with bullets (small black circles) by default -->
+        <!-- style="list-style-type: ;" - The list items will not be marked -->
+      </div>
+
+      <div>
+        <h4>List by order</h4>
+        <ol>
+          <li>a</li>
+          <li>b</li>
+          <li>c</li>
+        </ol>
+        <!-- The list items will be marked with numbers by default -->
+        <!-- type="" - defines the type of the list item marker -->
+      </div>
+
+      <div>
+        <h4>Div vs Span</h4>
+        This is a div
+      </div>
       <!-- a block-level and is often used as a container for other HTML elements -->
-      Lorem ipsum dolor sit amet
-    </div>
 
-    <span>
+      <span> This is a span </span>
       <!-- an inline container used to mark up a part of a text, or a part of a document -->
-      Lorem ipsum dolor sit amet
-    </span>
-    <br />
+      <br />
 
-    <iframe
-      src="https://htmldog.com/guides/html/beginner/gettingstarted/"
-      width="500"
-      height="300"
-      frameborder="0"
-    ></iframe>
-    <!-- An inline frame is used to embed another document within the current HTML document -->
+      <iframe
+        src="https://htmldog.com/guides/html/beginner/gettingstarted/"
+        width="0"
+        height="0"
+        frameborder="0"
+      ></iframe>
+      <!-- An inline frame is used to embed another document within the current HTML document -->
 
-    <div class="grid-container">
-      <div class="grid-item">1</div>
-      <div class="grid-item">2</div>
-      <div class="grid-item">3</div>
-      <div class="grid-item">4</div>
+      <h4>Grid layout</h4>
+      <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+      </div>
+
+      <h4>Form example</h4>
+      <div class="container-form">
+        <form action="">
+          <!-- a container for different types of input elements -->
+
+          <div class="form-box">
+            <fieldset>
+              <legend>Information:</legend>
+              <div class="input-box">
+                <div class="form-group">
+                  <label for="name">Name:</label>
+                  <!-- useful for screen-reader users -->
+                  <input type="text" name="name" id="name" />
+                  <!-- defines a single-line input field for text input -->
+                </div>
+                <div class="form-group">
+                  <label for="checkbox">Like:</label>
+                  <input type="checkbox" name="" id="" />
+                  <input type="checkbox" name="" id="checkbox" />
+                  <!-- select ZERO or MORE options of a limited number of choices -->
+                </div>
+                <div class="form-group">
+                  <label for="radio">Gender:</label>
+                  <input type="radio" name="" id="" checked />
+                  <input type="radio" name="" id="radio" />
+                  <!-- select ONE of a limited number of choices -->
+                </div>
+                <div class="form-group">
+                  <label for="cars">Choose a car:</label>
+                  <select id="cars" name="cars">
+                    <option value="volvo" selected>Volvo</option>
+                    <!-- defines an option that can be selected -->
+                    <option value="saab">Saab</option>
+                    <option value="fiat">Fiat</option>
+                    <option value="audi">Audi</option>
+                  </select>
+                  <!-- defines a drop-down list -->
+                </div>
+                <div class="form-group">
+                  <textarea
+                    name="area"
+                    id="area"
+                    cols="30"
+                    rows="10"
+                    placeholder="Write something"
+                  ></textarea>
+                  <!-- defines a button for submitting the form data to a form-handler -->
+                </div>
+                <button>Submit</button>
+              </div>
+            </fieldset>
+          </div>
+        </form>
+      </div>
+
+      <h4>Semantic html</h4>
+      <header>
+        <nav></nav>
+        <!-- defines a set of navigation links -->
+      </header>
+      <!-- represents a container for introductory content or a set of navigational links -->
+      <aside></aside>
+      <!-- defines some content aside from the content it is placed in (like a sidebar) -->
+      <section>
+        <main></main>
+        <!-- specifies the main content of a document -->
+        <article></article>
+        <!-- specifies independent, self-contained content -->
+        <figcaption>
+          <figure></figure>
+          <!-- specifies self-contained content, like illustrations, diagrams, photos, code listings -->
+        </figcaption>
+        <!-- defines a caption for a <figure> element -->
+        <summary></summary>
+        <!-- defines a visible heading for the <details> element -->
+        <details></details>
+        <!-- specifies additional details that the user can open and close on demand -->
+      </section>
+      <!-- defines a section in a document -->
+      <footer></footer>
+      <!-- defines a footer for a document or section -->
     </div>
 
-    <div class="container-form">
-      <form action="">
-        <!-- a container for different types of input elements -->
-
-        <label for="name">Name:</label>
-        <!-- useful for screen-reader users -->
-        <input type="text" name="name" id="name" />
-        <!-- defines a single-line input field for text input -->
-
-        <label for="checkbox">Like:</label>
-        <input type="checkbox" name="" id="" />
-        <input type="checkbox" name="" id="checkbox" />
-        <!-- select ZERO or MORE options of a limited number of choices -->
-
-        <label for="radio">Gender:</label>
-        <input type="radio" name="" id="" checked />
-        <input type="radio" name="" id="radio" />
-        <!-- select ONE of a limited number of choices -->
-
-        <label for="cars">Choose a car:</label>
-        <select id="cars" name="cars">
-          <!-- defines a drop-down list -->
-          <option value="volvo" selected>Volvo</option>
-          <!-- defines an option that can be selected -->
-          <option value="saab">Saab</option>
-          <option value="fiat">Fiat</option>
-          <option value="audi">Audi</option>
-        </select>
-
-        <label for="area">Type smt:</label>
-        <textarea name="area" id="area" cols="30" rows="10"></textarea>
-
-        <input type="button" value="Submit" />
-        <!-- defines a button for submitting the form data to a form-handler -->
-
-        <button>Btn</button>
-      </form>
-    </div>
-
-    <section></section>
-    <!-- defines a section in a document -->
-    <article></article>
-    <!-- specifies independent, self-contained content -->
-    <header></header>
-    <!-- represents a container for introductory content or a set of navigational links -->
-    <footer></footer>
-    <!-- defines a footer for a document or section -->
-    <nav></nav>
-    <!-- defines a set of navigation links -->
-    <aside></aside>
-    <!-- defines some content aside from the content it is placed in (like a sidebar) -->
-    <figure></figure>
-    <!-- specifies self-contained content, like illustrations, diagrams, photos, code listings -->
-    <figcaption></figcaption>
-    <!-- defines a caption for a <figure> element -->
-    <main></main>
-    <!-- specifies the main content of a document -->
-    <details></details>
-    <!-- specifies additional details that the user can open and close on demand -->
-    <summary></summary>
-    <!-- defines a visible heading for the <details> element -->
-
-    <div id="root"></div>
-
-    <script src="index.js">
+    <script src="">
       // - define a client-side script (JavaScript)
     </script>
   </body>
