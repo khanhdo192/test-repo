@@ -54,34 +54,44 @@
       <hr />
       <!-- defines a thematic break in an HTML page, displayed as a horizontal rule -->
       <div class="container">
-        <p>There is something here<br />line breaked here</p>
+        <p>There is wallpaperflare<br />background</p>
         <!-- defines a line break -->
-
-        <a href="#">Link</a>
+        <a
+          href="https://www.wallpaperflare.com/man-near-torii-gate-wallpaper-gray-temple-wallpaper-landscape-wallpaper-cqg"
+          >Image
+        </a>
         <!-- defines a hyperlink -->
-
-        <img src="url" alt="This is an image" width="50" height="50" />
+        <img src="assets/images/wpfbg.jpg" alt="This is an image" width="50%" height="auto" />
         <!-- used to embed an image in a web page -->
       </div>
       <div class="container">
         <h4>Table</h4>
         <table>
           <tr>
-            <th colspan="3" rowspan="2">Name</th>
+            <th colspan="3">Name</th>
             <!-- table header -->
-            <th>Age</th>
+            <th colspan="3">Age</th>
             <th>Phone</th>
           </tr>
           <!-- table row -->
           <tr>
             <td>Mr B</td>
+            <td>Mr B</td>
+            <td>Mr B</td>
             <!-- table data -->
+            <td>22</td>
+            <td>22</td>
             <td>22</td>
             <td>0xx 3xx 6xx</td>
           </tr>
           <tr>
-            <td>Mr D</td>
-            <td>32</td>
+            <td>Mr B</td>
+            <td>Mr B</td>
+            <td>Mr B</td>
+            <!-- table data -->
+            <td>22</td>
+            <td>22</td>
+            <td>22</td>
             <td>0xx 3xx 6xx</td>
           </tr>
         </table>
@@ -137,6 +147,7 @@
         <div class="grid-item">4</div>
       </div>
 
+      <br />
       <h4>Form example</h4>
       <div class="container-form">
         <form action="" autocomplete="off" method="" target="_blank">
@@ -144,48 +155,75 @@
 
           <div class="form-box">
             <fieldset>
-              <legend>Information:</legend>
+              <legend>Information Form</legend>
               <div class="input-box">
                 <div class="form-group">
-                  <label for="name">Name:</label>
+                  <label class="form-label" for="name">Name:</label>
                   <!-- useful for screen-reader users -->
-                  <input type="text" name="name" id="name" accesskey="n" tabindex="-1" autofocus />
-                  <!-- defines a single-line input field for text input -->
+                  <input class="form-control" type="text" name="name" id="name" />
+                  <!-- defindes a single-line input field for text input -->
                 </div>
                 <div class="form-group">
-                  <label for="checkbox">Like:</label>
-                  <input type="checkbox" name="" id="" />
-                  <input type="checkbox" name="" id="checkbox" />
+                  <label class="form-label" for="phone">Phone:</label>
+                  <input class="form-control" type="tel" name="phone" id="phone" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="number">Age:</label>
+                  <input class="form-control" type="number" name="number" id="number" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="email">Email:</label>
+                  <input class="form-control" type="email" name="email" id="email" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="pword">Password:</label>
+                  <input class="form-control" type="password" name="password" id="pword" />
+                </div>
+                <div class="form-group">
+                  <label class="form-check-label" for="dog">Like dog:</label>
+                  <input class="form-check-input" type="checkbox" name="" id="dog" />
                   <!-- select ZERO or MORE options of a limited number of choices -->
                 </div>
                 <div class="form-group">
-                  <label for="radio">Gender:</label>
-                  <input type="radio" name="" id="" checked />
-                  <input type="radio" name="" id="radio" />
-                  <!-- select ONE of a limited number of choices -->
+                  <label class="form-check-label" for="cat">Like cat:</label>
+                  <input class="form-check-input" type="checkbox" name="" id="cat" />
                 </div>
                 <div class="form-group">
-                  <label for="cars">Choose a car:</label>
+                  <input class="form-check-input" type="radio" name="male" id="male" />
+                  <!-- select ONE of a limited number of choices -->
+                  <label class="form-check-label" for="male">Male</label>
+                </div>
+                <div class="form-group">
+                  <input class="form-check-input" type="radio" name="female" id="female" />
+                  <label class="form-check-label" for="female">Female</label>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="cars">Country:</label>
                   <select id="cars" name="cars">
-                    <option value="volvo" selected>Volvo</option>
+                    <option value="volvo" selected>Vietnam</option>
                     <!-- defines an option that can be selected -->
-                    <option value="saab">Saab</option>
-                    <option value="fiat">Fiat</option>
-                    <option value="audi">Audi</option>
+                    <option value="saab">America</option>
+                    <option value="fiat">France</option>
+                    <option value="audi">Korea</option>
                   </select>
                   <!-- defines a drop-down list -->
                 </div>
                 <div class="form-group">
+                  <label for="file">Upload image:</label>
+                  <input type="file" id="file" />
+                </div>
+                <div class="form-group">
                   <textarea
+                    class="form-control"
                     name="area"
                     id="area"
-                    cols="30"
-                    rows="10"
+                    cols="50"
+                    rows="5"
                     placeholder="Write something"
                   ></textarea>
                   <!-- defines a button for submitting the form data to a form-handler -->
                 </div>
-                <button>Submit</button>
+                <button class="btn btn-submit">Submit</button>
               </div>
             </fieldset>
           </div>
@@ -197,7 +235,7 @@
         <video
           src="assets/video/2022-04-29 09-14-27.mp4"
           controls
-          width="450"
+          width="50%"
           height="300"
           autoplay
           muted
@@ -216,19 +254,22 @@
       <aside></aside>
       <!-- defines some content aside from the content it is placed in (like a sidebar) -->
       <section>
-        <img src="https://www.w3schools.com/html/img_sem_elements.gif" alt="" />
         <main></main>
         <!-- specifies the main content of a document -->
         <article></article>
         <!-- specifies independent, self-contained content -->
         <figcaption>
-          <figure></figure>
+          <figure>
+            <img src="https://www.w3schools.com/html/img_sem_elements.gif" alt="" />
+          </figure>
           <!-- specifies self-contained content, like illustrations, diagrams, photos, code listings -->
         </figcaption>
         <!-- defines a caption for a <figure> element -->
-        <summary></summary>
-        <!-- defines a visible heading for the <details> element -->
-        <details></details>
+        <details>
+          <summary>Release</summary>
+          <p>Good night</p>
+          <!-- defines a visible heading for the <details> element -->
+        </details>
         <!-- specifies additional details that the user can open and close on demand -->
       </section>
       <!-- defines a section in a document -->
@@ -242,7 +283,7 @@
     <script src="https://embed.twitch.tv/embed/v1.js"></script>
     <script type="text/javascript">
       new Twitch.Embed('twitch-embed', {
-        width: 854,
+        width: 50 + '%',
         height: 480,
         channel: 'riotgames',
         muted: true,
