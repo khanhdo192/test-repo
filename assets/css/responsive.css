@@ -1,0 +1,13 @@
+@media screen and (max-width: 768px) {
+  .grid-container {
+    -ms-grid-columns: (100px)[2];
+        grid-template-columns: repeat(2, 100px);
+  }
+  .form-group {
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
