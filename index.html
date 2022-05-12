@@ -34,237 +34,52 @@
   <body>
     <!-- defines the document's body, and is a container for all the visible contents -->
 
-    <div>
-      <div class="container">
-        <h1 title="Please use DevTools">Hi im heading 1</h1>
-        <!-- 
-          - titles or subtitles display on a webpage, defined with the <h1>(most important) to <h6>(least important) 
-          - search engines use the headings to index the structure and content of your web pages.
-        -->
-      </div>
-      <div class="container">
-        <p>Hi im paragraph</p>
-        <!--
-          - defines a paragraph
-          - starts on a new line
-          - browsers automatically add some white space (a margin) before and after a paragraph
-        -->
-      </div>
-
-      <hr />
-      <!-- defines a thematic break in an HTML page, displayed as a horizontal rule -->
-      <div class="container">
-        <p>There is wallpaperflare<br />background</p>
-        <!-- defines a line break -->
-        <a
-          href="https://www.wallpaperflare.com/man-near-torii-gate-wallpaper-gray-temple-wallpaper-landscape-wallpaper-cqg"
-          >Image
-        </a>
-        <!-- defines a hyperlink -->
-        <img src="assets/images/wpfbg.jpg" alt="This is an image" width="50%" height="auto" />
-        <!-- used to embed an image in a web page -->
-      </div>
-      <div class="container">
-        <h4>Table</h4>
-        <table>
-          <tr>
-            <th colspan="3">Name</th>
-            <!-- table header -->
-            <th colspan="3">Age</th>
-            <th>Phone</th>
-          </tr>
-          <!-- table row -->
-          <tr>
-            <td>Mr B</td>
-            <td>Mr B</td>
-            <td>Mr B</td>
-            <!-- table data -->
-            <td>22</td>
-            <td>22</td>
-            <td>22</td>
-            <td>0xx 3xx 6xx</td>
-          </tr>
-          <tr>
-            <td>Mr B</td>
-            <td>Mr B</td>
-            <td>Mr B</td>
-            <!-- table data -->
-            <td>22</td>
-            <td>22</td>
-            <td>22</td>
-            <td>0xx 3xx 6xx</td>
-          </tr>
-        </table>
-        <!-- arrange data into rows and columns -->
-      </div>
-
-      <div class="container" style="display: flex; justify-content: space-evenly">
-        <div>
-          <h4>List with bullets</h4>
-          <ul>
-            <li>b</li>
-            <li>a</li>
-            <li>c</li>
-          </ul>
-          <!-- The list items will be marked with bullets (small black circles) by default -->
-          <!-- style="list-style-type: ;" - The list items will not be marked -->
-        </div>
-        <div>
-          <h4>List by order</h4>
-          <ol>
-            <li>a</li>
-            <li>b</li>
-            <li>c</li>
-          </ol>
-          <!-- The list items will be marked with numbers by default -->
-          <!-- type="" - defines the type of the list item marker -->
-        </div>
-      </div>
-
-      <div class="container">
-        <h4>Div vs Span</h4>
-        This is a div
-      </div>
-      <!-- a block-level and is often used as a container for other HTML elements -->
-
-      <span> This is a span </span>
-      <!-- an inline container used to mark up a part of a text, or a part of a document -->
-      <br />
-
-      <iframe
-        src="https://htmldog.com/guides/html/beginner/gettingstarted/"
-        width="0"
-        height="0"
-        frameborder="0"
-      ></iframe>
-      <!-- An inline frame is used to embed another document within the current HTML document -->
-
-      <h4>Grid layout</h4>
-      <div class="grid-container">
-        <div class="grid-item">1</div>
-        <div class="grid-item">2</div>
-        <div class="grid-item">3</div>
-        <div class="grid-item">4</div>
-      </div>
-
-      <br />
-      <h4>Form example</h4>
-      <div class="container-form">
-        <form action="" autocomplete="off" method="" target="_blank">
-          <!-- a container for different types of input elements -->
-
-          <div class="form-box">
-            <fieldset>
-              <legend>Information Form</legend>
-              <div class="input-box">
-                <div class="form-group">
-                  <label class="form-label" for="name">Name:</label>
-                  <!-- useful for screen-reader users -->
-                  <input class="form-control" type="text" name="name" id="name" />
-                  <!-- defindes a single-line input field for text input -->
-                </div>
-                <div class="form-group">
-                  <label class="form-label" for="phone">Phone:</label>
-                  <input class="form-control" type="tel" name="phone" id="phone" />
-                </div>
-                <div class="form-group">
-                  <label class="form-label" for="number">Age:</label>
-                  <input class="form-control" type="number" name="number" id="number" />
-                </div>
-                <div class="form-group">
-                  <label class="form-label" for="email">Email:</label>
-                  <input class="form-control" type="email" name="email" id="email" />
-                </div>
-                <div class="form-group">
-                  <label class="form-label" for="pword">Password:</label>
-                  <input class="form-control" type="password" name="password" id="pword" />
-                </div>
-                <div class="form-group">
-                  <label class="form-check-label" for="dog">Like dog:</label>
-                  <input class="form-check-input" type="checkbox" name="" id="dog" />
-                  <!-- select ZERO or MORE options of a limited number of choices -->
-                </div>
-                <div class="form-group">
-                  <label class="form-check-label" for="cat">Like cat:</label>
-                  <input class="form-check-input" type="checkbox" name="" id="cat" />
-                </div>
-                <div class="form-group">
-                  <input class="form-check-input" type="radio" name="male" id="male" />
-                  <!-- select ONE of a limited number of choices -->
-                  <label class="form-check-label" for="male">Male</label>
-                </div>
-                <div class="form-group">
-                  <input class="form-check-input" type="radio" name="female" id="female" />
-                  <label class="form-check-label" for="female">Female</label>
-                </div>
-                <div class="form-group">
-                  <label class="form-label" for="cars">Country:</label>
-                  <select id="cars" name="cars">
-                    <option value="volvo" selected>Vietnam</option>
-                    <!-- defines an option that can be selected -->
-                    <option value="saab">America</option>
-                    <option value="fiat">France</option>
-                    <option value="audi">Korea</option>
-                  </select>
-                  <!-- defines a drop-down list -->
-                </div>
-                <div class="form-group">
-                  <label for="file">Upload image:</label>
-                  <input type="file" id="file" />
-                </div>
-                <div class="form-group">
-                  <textarea
-                    class="form-control"
-                    name="area"
-                    id="area"
-                    cols="50"
-                    rows="5"
-                    placeholder="Write something"
-                  ></textarea>
-                  <!-- defines a button for submitting the form data to a form-handler -->
-                </div>
-                <button class="btn btn-submit">Submit</button>
-              </div>
-            </fieldset>
-          </div>
-        </form>
-      </div>
-
-      <div class="container">
-        <h4>Video</h4>
-        <video
-          src="assets/video/2022-04-29 09-14-27.mp4"
-          controls
-          width="50%"
-          height="300"
-          autoplay
-          muted
-          loop
-        ></video>
-        <h4>Twich</h4>
-        <div id="twitch-embed"></div>
-      </div>
-
+    <header>
       <h4>Semantic html</h4>
-      <header>
-        <nav></nav>
-        <!-- defines a set of navigation links -->
-      </header>
-      <!-- represents a container for introductory content or a set of navigational links -->
-      <aside></aside>
-      <!-- defines some content aside from the content it is placed in (like a sidebar) -->
+      <nav>
+        <ul>
+          <li><a href="/home">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact us</a></li>
+        </ul>
+      </nav>
+      <!-- defines a set of navigation links -->
+    </header>
+    <!-- represents a container for introductory content or a set of navigational links -->
+    <aside>
+      <p>
+        This is a <mark>sidebar</mark>>, for example a terminology definition or a short background
+        to a historical figure.
+      </p>
+    </aside>
+    <!-- defines some content aside from the content it is placed in (like a sidebar) -->
+    <section>
+      <!-- defines a section in a document -->
+      <main></main>
+      <!-- specifies the main content of a document -->
+      <p>Top Stories</p>
       <section>
-        <main></main>
-        <!-- specifies the main content of a document -->
-        <article></article>
+        <p>News</p>
+        <article>Story 1</article>
         <!-- specifies independent, self-contained content -->
-        <figcaption>
-          <figure>
-            <img src="https://www.w3schools.com/html/img_sem_elements.gif" alt="" />
-          </figure>
-          <!-- specifies self-contained content, like illustrations, diagrams, photos, code listings -->
-        </figcaption>
-        <!-- defines a caption for a <figure> element -->
+        <article>Story 2</article>
+        <article>Story 3</article>
+      </section>
+      <section>
+        <p>Sport</p>
+        <article>Story 1</article>
+        <article>Story 2</article>
+        <article>Story 3</article>
+      </section>
+      <section>
+        <figure>
+          <img src="https://www.w3schools.com/html/img_sem_elements.gif" alt="" />
+          <figcaption>Semantic layout</figcaption>
+          <!-- defines a caption for a <figure> element -->
+        </figure>
+        <!-- specifies self-contained content, like illustrations, diagrams, photos, code listings -->
+      </section>
+      <section>
         <details>
           <summary>Release</summary>
           <p>Good night</p>
@@ -272,10 +87,223 @@
         </details>
         <!-- specifies additional details that the user can open and close on demand -->
       </section>
-      <!-- defines a section in a document -->
-      <footer></footer>
-      <!-- defines a footer for a document or section -->
+    </section>
+
+    <div class="container">
+      <h1 title="Please use DevTools">Hi im heading 1</h1>
+      <!-- 
+        - titles or subtitles display on a webpage, defined with the <h1>(most important) to <h6>(least important) 
+        - search engines use the headings to index the structure and content of your web pages.
+      -->
     </div>
+    <div class="container">
+      <p>Hi im paragraph</p>
+      <!--
+        - defines a paragraph
+        - starts on a new line
+        - browsers automatically add some white space (a margin) before and after a paragraph
+      -->
+    </div>
+
+    <hr />
+    <!-- defines a thematic break in an HTML page, displayed as a horizontal rule -->
+    <div class="container">
+      <p>There is wallpaperflare<br />background</p>
+      <!-- defines a line break -->
+      <a
+        href="https://www.wallpaperflare.com/man-near-torii-gate-wallpaper-gray-temple-wallpaper-landscape-wallpaper-cqg"
+        >Image
+      </a>
+      <!-- defines a hyperlink -->
+      <img src="assets/images/wpfbg.jpg" alt="This is an image" width="50%" height="auto" />
+      <!-- used to embed an image in a web page -->
+    </div>
+    <div class="container">
+      <h4>Table</h4>
+      <table>
+        <tr>
+          <th colspan="3">Name</th>
+          <!-- table header -->
+          <th colspan="3">Age</th>
+          <th>Phone</th>
+        </tr>
+        <!-- table row -->
+        <tr>
+          <td>Mr B</td>
+          <td>Mr B</td>
+          <td>Mr B</td>
+          <!-- table data -->
+          <td>22</td>
+          <td>22</td>
+          <td>22</td>
+          <td>0xx 3xx 6xx</td>
+        </tr>
+        <tr>
+          <td>Mr B</td>
+          <td>Mr B</td>
+          <td>Mr B</td>
+          <!-- table data -->
+          <td>22</td>
+          <td>22</td>
+          <td>22</td>
+          <td>0xx 3xx 6xx</td>
+        </tr>
+      </table>
+      <!-- arrange data into rows and columns -->
+    </div>
+
+    <div class="container" style="display: flex; justify-content: space-evenly">
+      <div>
+        <h4>List with bullets</h4>
+        <ul>
+          <li>b</li>
+          <li>a</li>
+          <li>c</li>
+        </ul>
+        <!-- The list items will be marked with bullets (small black circles) by default -->
+        <!-- style="list-style-type: ;" - The list items will not be marked -->
+      </div>
+      <div>
+        <h4>List by order</h4>
+        <ol>
+          <li>a</li>
+          <li>b</li>
+          <li>c</li>
+        </ol>
+        <!-- The list items will be marked with numbers by default -->
+        <!-- type="" - defines the type of the list item marker -->
+      </div>
+    </div>
+
+    <div class="container">
+      <h4>Div vs Span</h4>
+      This is a div
+    </div>
+    <!-- a block-level and is often used as a container for other HTML elements -->
+
+    <span> This is a span </span>
+    <!-- an inline container used to mark up a part of a text, or a part of a document -->
+    <br />
+
+    <iframe
+      src="https://htmldog.com/guides/html/beginner/gettingstarted/"
+      width="0"
+      height="0"
+      frameborder="0"
+    ></iframe>
+    <!-- An inline frame is used to embed another document within the current HTML document -->
+
+    <h4>Grid layout</h4>
+    <div class="grid-container">
+      <div class="grid-item">1</div>
+      <div class="grid-item">2</div>
+      <div class="grid-item">3</div>
+      <div class="grid-item">4</div>
+    </div>
+
+    <br />
+    <h4>Form example</h4>
+    <div class="container-form">
+      <form action="" autocomplete="off" method="" target="_blank">
+        <!-- a container for different types of input elements -->
+
+        <div class="form-box">
+          <fieldset>
+            <legend>Information Form</legend>
+            <div class="input-box">
+              <div class="form-group">
+                <label class="form-label" for="name">Name:</label>
+                <!-- useful for screen-reader users -->
+                <input class="form-control" type="text" name="name" id="name" />
+                <!-- defindes a single-line input field for text input -->
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="phone">Phone:</label>
+                <input class="form-control" type="tel" name="phone" id="phone" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="number">Age:</label>
+                <input class="form-control" type="number" name="number" id="number" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="email">Email:</label>
+                <input class="form-control" type="email" name="email" id="email" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="pword">Password:</label>
+                <input class="form-control" type="password" name="password" id="pword" />
+              </div>
+              <div class="form-group">
+                <label class="form-check-label" for="dog">Like dog:</label>
+                <input class="form-check-input" type="checkbox" name="" id="dog" />
+                <!-- select ZERO or MORE options of a limited number of choices -->
+              </div>
+              <div class="form-group">
+                <label class="form-check-label" for="cat">Like cat:</label>
+                <input class="form-check-input" type="checkbox" name="" id="cat" />
+              </div>
+              <div class="form-group">
+                <input class="form-check-input" type="radio" name="male" id="male" />
+                <!-- select ONE of a limited number of choices -->
+                <label class="form-check-label" for="male">Male</label>
+              </div>
+              <div class="form-group">
+                <input class="form-check-input" type="radio" name="female" id="female" />
+                <label class="form-check-label" for="female">Female</label>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="cars">Country:</label>
+                <select id="cars" name="cars">
+                  <option value="volvo" selected>Vietnam</option>
+                  <!-- defines an option that can be selected -->
+                  <option value="saab">America</option>
+                  <option value="fiat">France</option>
+                  <option value="audi">Korea</option>
+                </select>
+                <!-- defines a drop-down list -->
+              </div>
+              <div class="form-group">
+                <label for="file">Upload image:</label>
+                <input type="file" id="file" />
+              </div>
+              <div class="form-group">
+                <textarea
+                  class="form-control"
+                  name="area"
+                  id="area"
+                  cols="50"
+                  rows="5"
+                  placeholder="Write something"
+                ></textarea>
+                <!-- defines a button for submitting the form data to a form-handler -->
+              </div>
+              <button class="btn btn-submit">Submit</button>
+            </div>
+          </fieldset>
+        </div>
+      </form>
+    </div>
+
+    <div class="container">
+      <h4>Video</h4>
+      <video
+        src="assets/video/2022-04-29 09-14-27.mp4"
+        controls
+        width="50%"
+        height="300"
+        autoplay
+        muted
+        loop
+      ></video>
+      <h4>Twich</h4>
+      <div id="twitch-embed"></div>
+    </div>
+
+    <footer>
+      <small>&copy;Company A</small>
+      <time datetime="2017-10-31T11:21:00+02:00">Tuesday, 31 October 2017</time>
+    </footer>
+    <!-- defines a footer for a document or section -->
 
     <script src="assets/js/script.js"></script>
     <!-- - define a client-side script (JavaScript) -->
