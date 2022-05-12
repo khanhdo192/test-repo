@@ -11,6 +11,13 @@ body {
   text-align: center;
 }
 
+header,
+nav,
+section,
+footer {
+  padding: 10px 0;
+}
+
 .container {
   margin: 10px auto;
 }
