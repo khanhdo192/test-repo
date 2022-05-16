@@ -30,6 +30,8 @@ ctrl + shift + h - find & replace in workspace
 
 ctrl + l - blacked out line
 
+ctrl + shift + l - cursor all keyword
+
 ctrl + alt + up/down arrow - insert cursor up/down
 
 alt + mouse click - insert cursor
