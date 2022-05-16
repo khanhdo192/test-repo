@@ -72,6 +72,10 @@ git revert [commit-id] - undoing shared public changes
 
 git checkout [commit-id] - review the commit history
 
+git cherry-pick [commit-id] or [commit-id-1]^..[commit-id-5] - pick 1 or n commit in specify branch to current branch
+
+git cherry-pick [branch-name] - commit for 2 branch same time
+
 rm -rf .git - delete local repo
 
 .gitignore - exclude files from being tracked with Git
